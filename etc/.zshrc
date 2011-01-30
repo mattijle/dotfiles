@@ -4,7 +4,6 @@ autoload -Uz promptinit
 promptinit
 prompt walters
 
-# Use emacs keybindings even if our EDITOR is set to vi
 bindkey -v
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
