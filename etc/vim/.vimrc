@@ -11,8 +11,8 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 let g:miniBufExplForceSyntaxEnable = 1
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
-
 "Tasklist mappings**********************************************************
+
 map T :TaskList<CR>
 map P :TlistToggle<CR>
 
@@ -38,4 +38,8 @@ set autoindent
 set smartindent
 :syntax on
 
-colorscheme ir_black
+
+
+let g:zenburn_high_Contrast = 1
+"colorscheme ir_black
+colorscheme zenburn
