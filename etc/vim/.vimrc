@@ -43,3 +43,5 @@ set smartindent
 let g:zenburn_high_Contrast = 1
 "colorscheme ir_black
 colorscheme zenburn
+
+set guifont=Inconsolata\ 13
