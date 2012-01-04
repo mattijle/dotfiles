@@ -1,0 +1,4 @@
+[ui]
+editor=vim
+username= Matti Leppanen <matti@mattijle.com>
+ssh = ssh -C
