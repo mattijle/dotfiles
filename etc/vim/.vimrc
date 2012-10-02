@@ -1,5 +1,22 @@
-filetype plugin on
+set nocompatible
+filetype off
 
+set laststatus=2
+
+colors zenburn
+
+set rtp+=~/.vim/bundle/vundle
+
+
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+
+Bundle 'Lokaltog/vim-powerline'
+
+filetype plugin indent on
+filetype plugin on
 
 "Double tapping j escapes modes.
 imap jj <Esc>
@@ -40,8 +57,11 @@ set smartindent
 
 
 
-let g:zenburn_high_Contrast = 1
+"let g:zenburn_high_Contrast = 1
 "colorscheme ir_black
-colorscheme zenburn
+"colorscheme zenburn
 
 set guifont=Inconsolata\ 13
+
+let g:Powerline_colorscheme = 'zenburn'
+let g:Powerline_symbols = 'compatible'

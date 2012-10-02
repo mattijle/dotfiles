@@ -1,10 +1,11 @@
+set TERM='xterm-256color'
+export TERM
 export WORKON_HOME=~/virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 export PIP_VIRTUALENV_BASE=~/virtualenvs
 
-
-
-
+alias set_title="echo -ne '\033]0;Matin Jutut Linode \007'"
+set_title
 # Set up the prompt
 
 autoload -Uz promptinit
@@ -40,8 +41,15 @@ zstyle ':completion:*' verbose true
 
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
-alias ls='ls --color=auto'
-alias lsa='ls --color=auto -Al'
-alias grep='grep --color=auto'
-alias tmux-att='tmux attach -d -t 0'
 
+
+#--------------------------------------------------------------------------------
+#Aliases
+#--------------------------------------------------------------------------------
+alias ll='ls -lah --color=auto'
+alias grep='grep --color=auto'
+alias tmatt='tmux attach -d -t general'
+alias tchat='tmux attach -d -t chat'
+alias ..= 'cd ..'
+alias ...= 'cd ../..'
+alias --  -= 'cd -'
