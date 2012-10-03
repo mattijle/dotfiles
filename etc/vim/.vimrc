@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 
 
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'pydave/powerline-sanity'
 set nocp
 
 
@@ -68,5 +69,4 @@ set ofu=syntaxcomplete#Complete
 set guifont=Inconsolata\ 13
 
 let g:Powerline_symbols = 'compatible'
-"let g:Powerline_theme = 'skwp'
 let g:Powerline_stl_path_style = 'full'
