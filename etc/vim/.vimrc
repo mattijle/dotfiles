@@ -3,7 +3,6 @@ filetype off
 
 set laststatus=2
 
-colors zenburn
 
 set rtp+=~/.vim/bundle/vundle
 
@@ -14,6 +13,10 @@ Bundle 'gmarik/vundle'
 
 
 Bundle 'Lokaltog/vim-powerline'
+set nocp
+
+
+set tags+=~/.vim/tags/cpp
 
 filetype plugin indent on
 filetype plugin on
@@ -27,7 +30,10 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 let g:miniBufExplForceSyntaxEnable = 1
-let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+
+
+let Tlist_Ctags_Cmd='/usr/bin/ctags'
+let Tlist_WinWidth=50
 "Tasklist mappings**********************************************************
 
 map T :TaskList<CR>
@@ -56,13 +62,11 @@ set autoindent
 set smartindent
 :syntax on
 
+set ofu=syntaxcomplete#Complete
 
-
-"let g:zenburn_high_Contrast = 1
-"colorscheme ir_black
-"colorscheme zenburn
-
+"colors zenburn
 set guifont=Inconsolata\ 13
 
-let g:Powerline_colorscheme = 'zenburn'
 let g:Powerline_symbols = 'compatible'
+"let g:Powerline_theme = 'skwp'
+let g:Powerline_stl_path_style = 'full'

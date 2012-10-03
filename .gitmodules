@@ -1,3 +1,6 @@
 [submodule "etc/vim/.vim/vim-powerline"]
 	path = etc/vim/.vim/vim-powerline
 	url = https://github.com/gmarik/vundle.git
+[submodule "etc/vim/.vim/bundle/powerline-sanity"]
+	path = etc/vim/.vim/bundle/powerline-sanity
+	url = https://github.com/pydave/powerline-sanity.git
