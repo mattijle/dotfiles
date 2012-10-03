@@ -44,6 +44,7 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 
 "General stuff**************************************************************
+set number
 set equalalways
 set cursorline
 set expandtab
