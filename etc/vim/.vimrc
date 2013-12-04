@@ -1,9 +1,15 @@
 set nocompatible
+call pathogen#infect()
 filetype off
-
+syntax enable
+set background=light
+let g:solarized_termcolors=256
+colors solarized
 set laststatus=2
 set nocp
 set tags+=~/.vim/tags/cpp
+
+
 
 filetype plugin indent on
 filetype plugin on
@@ -35,10 +41,9 @@ set equalalways
 set cursorline
 set expandtab
 set textwidth=79
-set tabstop=8
+set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
-:syntax on
 set ofu=syntaxcomplete#Complete

@@ -58,7 +58,7 @@ replaces = { "[]=" = "$*"; };
 abstracts = {
 
   # asetukset ja muu sonta (ei toimi)
-# msglevel_clientcrap = "        %p* %K| %K$*";
+  # msglevel_clientcrap = "        %p* %K| %K$*";
 
   # awaybar.pl
   sb_awaybar = "%1%W AWAY: {sb %w$0-} ";
@@ -310,10 +310,10 @@ formats = {
     chansetup_footer = "";
     channel_move_notify = "{channel $0} is already joined in window $1, use \"/WINDOW ITEM MOVE $0\" to move it to this window";
 
-#    own_msg_private = "{ownprivmsg msg $0}$1";
-#    own_msg_private_query = "{ownprivmsgnick {ownprivnick $[-9]2}}$1";
-#    msg_private = "{privmsg $0 $1}$2";
-#    msg_private_query = "{privmsgnick $[-9]0}$2";
+    #    own_msg_private = "{ownprivmsg msg $0}$1";
+    #    own_msg_private_query = "{ownprivmsgnick {ownprivnick $[-9]2}}$1";
+    #    msg_private = "{privmsg $0 $1}$2";
+    #    msg_private_query = "{privmsgnick $[-9]0}$2";
 
     no_msgs_got = "        %p* %K| %KYou have not received a message from anyone yet";
     no_msgs_sent = "        %p* %K| %KYou have not sent a message to anyone yet";

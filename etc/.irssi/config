@@ -78,12 +78,6 @@ chatnets = {
 };
 
 channels = (
-  { name = "#loleurope_fi"; chatnet = "QuakeNet"; autojoin = "yes"; },
-  { 
-    name = "#leagueoflegends";
-    chatnet = "QuakeNet";
-    autojoin = "yes";
-  },
   { name = "#kazzak"; chatnet = "QuakeNet"; autojoin = "yes"; },
   { name = "#daggerspine.eu"; chatnet = "QuakeNet"; autojoin = "yes"; },
   { name = "#ukta"; chatnet = "Blitzed"; autojoin = "yes"; },
@@ -91,7 +85,8 @@ channels = (
   { name = "#openhatch"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#chromium"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#diablo"; chatnet = "esper"; autojoin = "yes"; },
-  { name = "#salmonsnake"; chatnet = "QuakeNet"; autojoin = "yes"; }
+  { name = "#salmonsnake"; chatnet = "QuakeNet"; autojoin = "yes"; },
+  { name = "#pathofexile"; chatnet = "freenode"; autojoin = "yes"; }
 );
 
 aliases = {

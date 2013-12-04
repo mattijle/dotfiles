@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/matti/projects/champ_builder/assets/champs'
 let g:netrw_dirhist_2='/var/www/mattijle_com'
 let g:netrw_dirhist_3='/var/www/mattijle_com/main'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/home/matti/projects/mattijle.com/src/main'
 let g:netrw_dirhist_6='/home/matti/projects/dotfiles/etc/.irssi'
 let g:netrw_dirhist_7='/home/matti/projects/dotfiles/etc/vim/.vim'
 let g:netrw_dirhist_8='/home/matti/projects/dotfiles/etc/vim'
+let g:netrw_dirhist_9='/home/matti/.vim'
