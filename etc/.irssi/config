@@ -86,7 +86,8 @@ channels = (
   { name = "#chromium"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#diablo"; chatnet = "esper"; autojoin = "yes"; },
   { name = "#salmonsnake"; chatnet = "QuakeNet"; autojoin = "yes"; },
-  { name = "#pathofexile"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#pathofexile"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#mtgbore"; chatnet = "EFNet"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -246,6 +247,13 @@ statusbar = {
       items = {
         barstart = { priority = "100"; };
         awl_0 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+    awl_1 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_1 = { };
         barend = { priority = "100"; alignment = "right"; };
       };
     };
