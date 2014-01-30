@@ -1,11 +1,11 @@
 set nocompatible
-call pathogen#infect()
+execute pathogen#infect()
 filetype off
 syntax enable
 "set background=dark
-"let g:solarized_termcolors=256
-"colors solarized
-colors corporation
+let g:solarized_termcolors=256
+colors solarized
+"colors corporation
 set laststatus=2
 set nocp
 set tags+=~/.vim/tags/cpp
@@ -37,13 +37,15 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 "General stuff**************************************************************
 set number
-set equalalways
+set eadirection=hor
+"set equalalways
 set cursorline
 set expandtab
 set textwidth=79
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set autoindent
 set smartindent
 set ofu=syntaxcomplete#Complete
+map <C-n> :NERDTreeToggle<CR>
