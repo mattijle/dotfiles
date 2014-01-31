@@ -22,11 +22,6 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 let g:miniBufExplForceSyntaxEnable = 1
-let Tlist_Ctags_Cmd='/usr/bin/ctags'
-let Tlist_WinWidth=50
-"Tasklist mappings**********************************************************
-map T :TaskList<CR>
-map P :TlistToggle<CR>
 "Omni completion stuffs*****************************************************
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType html :set omnifunc=htmlcomplete#CompleteTags
@@ -49,26 +44,3 @@ set autoindent
 set smartindent
 set ofu=syntaxcomplete#Complete
 map <C-n> :NERDTreeToggle<CR>
-"Vim statusline shamelessly ripped from http://amix.dk/blog/post/19571
-"Git branch
-function! GitBranch()
-    let branch = system("git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* //'")
-    if branch != ''
-        return '   Git Branch: ' . substitute(branch, '\n', '', 'g')
-    en
-    return ''
-endfunction
-
-function! CurDir()
-    return substitute(getcwd(), '/Users/amir/', "~/", "g")
-endfunction
-
-function! HasPaste()
-    if &paste
-        return 'PASTE MODE  '
-    en
-    return ''
-endfunction
-
-" Format the statusline
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L%{GitBranch()}
