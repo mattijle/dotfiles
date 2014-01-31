@@ -7,8 +7,6 @@ syntax enable
 "colors solarized
 colors railscasts
 set laststatus=2
-set nocp
-set tags+=~/.vim/tags/cpp
 
 
 filetype plugin indent on
