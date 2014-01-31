@@ -13,3 +13,9 @@
 [submodule "etc/vim/.vim/bundle/vim-colors-solarized"]
 	path = etc/vim/.vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "etc/vim/.vim/bundle/nerdtree"]
+	path = etc/vim/.vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "etc/vim/.vim/bundle/vim-fugitive"]
+	path = etc/vim/.vim/bundle/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git

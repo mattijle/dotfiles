@@ -1,11 +1,11 @@
 set nocompatible
-call pathogen#infect()
+execute pathogen#infect()
 filetype off
 syntax enable
 "set background=dark
 "let g:solarized_termcolors=256
 "colors solarized
-colors corporation
+colors railscasts
 set laststatus=2
 set nocp
 set tags+=~/.vim/tags/cpp
@@ -22,11 +22,6 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 let g:miniBufExplForceSyntaxEnable = 1
-let Tlist_Ctags_Cmd='/usr/bin/ctags'
-let Tlist_WinWidth=50
-"Tasklist mappings**********************************************************
-map T :TaskList<CR>
-map P :TlistToggle<CR>
 "Omni completion stuffs*****************************************************
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType html :set omnifunc=htmlcomplete#CompleteTags
@@ -37,13 +32,15 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 "General stuff**************************************************************
 set number
-set equalalways
+set eadirection=hor
+"set equalalways
 set cursorline
 set expandtab
 set textwidth=79
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set autoindent
 set smartindent
 set ofu=syntaxcomplete#Complete
+map <C-n> :NERDTreeToggle<CR>
