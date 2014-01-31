@@ -1,9 +1,2 @@
-
-For Vim:
-
-In addition to what's here you need to have Exuberant Ctags installed. 
-You can get it from here (http://ctags.sourceforge.net/).
-
-To install Ctags, unpack it, go into the directory and do compile/install:
-
-./configure && sudo make install
+dotfiles
+===
