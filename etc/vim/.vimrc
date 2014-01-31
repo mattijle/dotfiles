@@ -3,9 +3,9 @@ execute pathogen#infect()
 filetype off
 syntax enable
 "set background=dark
-let g:solarized_termcolors=256
-colors solarized
-"colors corporation
+"let g:solarized_termcolors=256
+"colors solarized
+colors railscasts
 set laststatus=2
 set nocp
 set tags+=~/.vim/tags/cpp
