@@ -7,8 +7,6 @@ syntax enable
 "colors solarized
 colors railscasts
 set laststatus=2
-set nocp
-set tags+=~/.vim/tags/cpp
 
 
 filetype plugin indent on
@@ -44,3 +42,10 @@ set autoindent
 set smartindent
 set ofu=syntaxcomplete#Complete
 map <C-n> :NERDTreeToggle<CR>
+
+function! CurDir()
+    return substitute(getcwd(), '/Users/amir/', "~/", "g")
+endfunction
+
+" Format the statusline
+set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L
