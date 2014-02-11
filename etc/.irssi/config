@@ -47,11 +47,12 @@ chatnets = {
     max_whois = "4";
     max_query_chans = "5";
   };
-  EFNet = { 
+  EFNet = {
     type = "IRC";
     max_kicks = "4";
     max_msgs = "3";
     max_whois = "1";
+    nick = "matti";
   };
   Undernet = {
     type = "IRC";
@@ -285,6 +286,8 @@ settings = {
     awl_prefer_name = "yes";
     awl_sbar_maxlength = "yes";
     awl_separator = "%N %N";
+    nicklist_height = "101";
+    nicklist_width = "69";
   };
   "fe-text" = { actlist_sort = "refnum"; };
 };
