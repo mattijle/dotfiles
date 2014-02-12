@@ -1,6 +1,11 @@
 servers = (
   { address = "irc.stealth.net"; chatnet = "IRCnet"; port = "6668"; },
-  { address = "irc.efnet.net"; chatnet = "EFNet"; port = "6667"; },
+  {
+    address = "irc.efnet.net";
+    chatnet = "EFNet";
+    port = "6667";
+    autoconnect = "yes";
+  },
   { 
     address = "irc.undernet.org";
     chatnet = "Undernet";
@@ -79,15 +84,14 @@ chatnets = {
 };
 
 channels = (
-  { name = "#kazzak"; chatnet = "QuakeNet"; autojoin = "yes"; },
   { name = "#daggerspine.eu"; chatnet = "QuakeNet"; autojoin = "yes"; },
   { name = "#ukta"; chatnet = "Blitzed"; autojoin = "yes"; },
   { name = "##proggit"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#openhatch"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#chromium"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#diablo"; chatnet = "esper"; autojoin = "yes"; },
   { name = "#salmonsnake"; chatnet = "QuakeNet"; autojoin = "yes"; },
   { name = "#pathofexile"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#nodebb"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#mtgbore"; chatnet = "EFNet"; autojoin = "yes"; }
 );
 
@@ -248,13 +252,6 @@ statusbar = {
       items = {
         barstart = { priority = "100"; };
         awl_0 = { };
-        barend = { priority = "100"; alignment = "right"; };
-      };
-    };
-    awl_1 = {
-      items = {
-        barstart = { priority = "100"; };
-        awl_1 = { };
         barend = { priority = "100"; alignment = "right"; };
       };
     };
