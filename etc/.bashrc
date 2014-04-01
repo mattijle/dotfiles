@@ -10,14 +10,14 @@ esac
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
-HISTCONTROL=ignoreboth
-export PATH=$PATH:/home/matti/local/bin
+HISTCONTROL=ignoreboth:erasedups
+export PATH=$PATH:/home/matti/local/bin:/home/matti/development/adt-bundle/sdk/tools:/home/matti/development/adt-bundle/sdk/platform-tools
 # append to the history file, don't overwrite it
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=""
+HISTFILESIZE=""
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -64,7 +64,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-
+alias vim='vim --servername mattijle --remote-silent '
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -88,4 +88,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-#export PATH=$PATH:/home/matti/local/bin
