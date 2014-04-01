@@ -7,7 +7,7 @@ syntax enable
 "colors solarized
 colors railscasts
 set laststatus=2
-
+set directory=$HOME/.swaps//
 
 filetype plugin indent on
 filetype plugin on
