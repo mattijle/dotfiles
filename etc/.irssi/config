@@ -1,6 +1,11 @@
 servers = (
   { address = "irc.stealth.net"; chatnet = "IRCnet"; port = "6668"; },
-  { address = "irc.efnet.net"; chatnet = "EFNet"; port = "6667"; },
+  {
+    address = "irc.efnet.net";
+    chatnet = "EFNet";
+    port = "6667";
+    autoconnect = "yes";
+  },
   { 
     address = "irc.undernet.org";
     chatnet = "Undernet";
@@ -47,11 +52,12 @@ chatnets = {
     max_whois = "4";
     max_query_chans = "5";
   };
-  EFNet = { 
+  EFNet = {
     type = "IRC";
     max_kicks = "4";
     max_msgs = "3";
     max_whois = "1";
+    nick = "matti";
   };
   Undernet = {
     type = "IRC";
@@ -78,15 +84,15 @@ chatnets = {
 };
 
 channels = (
-  { name = "#kazzak"; chatnet = "QuakeNet"; autojoin = "yes"; },
   { name = "#daggerspine.eu"; chatnet = "QuakeNet"; autojoin = "yes"; },
   { name = "#ukta"; chatnet = "Blitzed"; autojoin = "yes"; },
   { name = "##proggit"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#openhatch"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#chromium"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#diablo"; chatnet = "esper"; autojoin = "yes"; },
   { name = "#salmonsnake"; chatnet = "QuakeNet"; autojoin = "yes"; },
-  { name = "#pathofexile"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#pathofexile"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#nodebb"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#mtgbore"; chatnet = "EFNet"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -277,6 +283,8 @@ settings = {
     awl_prefer_name = "yes";
     awl_sbar_maxlength = "yes";
     awl_separator = "%N %N";
+    nicklist_height = "101";
+    nicklist_width = "69";
   };
   "fe-text" = { actlist_sort = "refnum"; };
 };
