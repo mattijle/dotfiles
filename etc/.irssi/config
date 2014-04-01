@@ -22,7 +22,7 @@ servers = (
   },
   { address = "silc.silcnet.org"; chatnet = "SILC"; port = "706"; },
   {
-    address = "irc.freenode.net";
+    address = "chat.freenode.net";
     chatnet = "freenode";
     port = "6667";
     autoconnect = "yes";
@@ -92,7 +92,8 @@ channels = (
   { name = "#salmonsnake"; chatnet = "QuakeNet"; autojoin = "yes"; },
   { name = "#pathofexile"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#nodebb"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#mtgbore"; chatnet = "EFNet"; autojoin = "yes"; }
+  { name = "#mtgbore"; chatnet = "EFNet"; autojoin = "yes"; },
+  { name = "#koding"; chatnet = "freenode"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -252,6 +253,13 @@ statusbar = {
       items = {
         barstart = { priority = "100"; };
         awl_0 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+    awl_1 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_1 = { };
         barend = { priority = "100"; alignment = "right"; };
       };
     };

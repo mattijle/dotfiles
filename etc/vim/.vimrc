@@ -1,5 +1,5 @@
+call pathogen#infect()
 set nocompatible
-execute pathogen#infect()
 filetype off
 syntax enable
 "set background=dark
@@ -42,9 +42,9 @@ set autoindent
 set smartindent
 set ofu=syntaxcomplete#Complete
 map <C-n> :NERDTreeToggle<CR>
-
+let g:syntastic_javascript_checkers = ['jshint']
 function! CurDir()
-    return substitute(getcwd(), '/Users/amir/', "~/", "g")
+    return substitute(getcwd(), '/home/matti/', "~/", "g")
 endfunction
 
 " Format the statusline
