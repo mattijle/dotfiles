@@ -88,3 +88,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# added by travis gem
+[ -f /home/matti/.travis/travis.sh ] && source /home/matti/.travis/travis.sh

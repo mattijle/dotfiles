@@ -4,8 +4,8 @@ filetype off
 syntax enable
 "set background=dark
 "let g:solarized_termcolors=256
-"colors solarized
-colors railscasts
+colors solarized
+"colors railscasts
 set laststatus=2
 set directory=$HOME/.swaps//
 
@@ -44,7 +44,7 @@ set ofu=syntaxcomplete#Complete
 map <C-n> :NERDTreeToggle<CR>
 
 function! CurDir()
-    return substitute(getcwd(), '/Users/amir/', "~/", "g")
+    return substitute(getcwd(), '/home/matti/', "~/", "g")
 endfunction
 
 " Format the statusline
