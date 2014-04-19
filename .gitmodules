@@ -13,3 +13,9 @@
 [submodule "etc/vim/.vim/bundle/vim-fugitive"]
 	path = etc/vim/.vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+[submodule "etc/vim/.vim/bundle/syntastic"]
+	path = etc/vim/.vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "etc/vim/.vim/bundle/vim-gitgutter"]
+	path = etc/vim/.vim/bundle/vim-gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
