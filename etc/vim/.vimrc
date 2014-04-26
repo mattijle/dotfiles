@@ -2,10 +2,8 @@ call pathogen#infect()
 set nocompatible
 filetype off
 syntax enable
-"set background=dark
-"let g:solarized_termcolors=256
+set background=light
 colors solarized
-"colors railscasts
 set laststatus=2
 set directory=$HOME/.swaps//
 
