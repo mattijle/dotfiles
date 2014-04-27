@@ -3,7 +3,6 @@ set nocompatible
 filetype off
 syntax enable
 set background=dark
-"let g:solarized_termcolors=256
 colors solarized
 set laststatus=2
 set directory=$HOME/.swaps//
