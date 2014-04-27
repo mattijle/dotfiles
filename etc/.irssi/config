@@ -278,7 +278,7 @@ settings = {
     timestamp_format = "%H:%M:%S";
   };
   "fe-common/core" = {
-    theme = "weed";
+    theme = "solarized";
     autolog = "yes";
     term_charset = "UTF-8";
   };
