@@ -2,7 +2,7 @@ call pathogen#infect()
 set nocompatible
 filetype off
 syntax enable
-set background=light
+set background=dark
 colors solarized
 set laststatus=2
 set directory=$HOME/.swaps//
