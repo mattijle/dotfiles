@@ -1,0 +1,10 @@
+{
+	"installed_packages":
+	[
+		"JavaScriptNext - ES6 Syntax",
+		"JsFormat",
+		"JSHint",
+		"NodeRequirer",
+		"SublimeOnSaveBuild"
+	]
+}
