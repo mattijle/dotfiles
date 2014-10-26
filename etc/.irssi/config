@@ -84,7 +84,6 @@ chatnets = {
 };
 
 channels = (
-  { name = "#daggerspine.eu"; chatnet = "QuakeNet"; autojoin = "yes"; },
   { name = "#ukta"; chatnet = "Blitzed"; autojoin = "yes"; },
   { name = "##proggit"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#openhatch"; chatnet = "freenode"; autojoin = "yes"; },
@@ -93,7 +92,8 @@ channels = (
   { name = "#pathofexile"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#nodebb"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#mtgbore"; chatnet = "EFNet"; autojoin = "yes"; },
-  { name = "#koding"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#koding"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#neovim"; chatnet = "freenode"; autojoin = "yes"; }
 );
 
 aliases = {
